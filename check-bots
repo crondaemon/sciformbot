@@ -1,0 +1,14 @@
+#!/bin/bash
+
+BASEDIR="/home/guignol/bots"
+
+for bot in xinfei_bot.rb sciform_bot.rb
+do
+	output=$(ps aux | grep $bot | grep -v grep)
+	if [ "$output" == "" ]
+	then
+		#tail -n 100 $BASEDIR/nohup.out
+		echo "ciao" | mail -s "Bot $bot crash" lomato@gmail.com
+		cd $BASEDIR && screen -dmS $bot bundle exec ruby $bot &
+	fi
+done

@@ -1,0 +1,1 @@
+L'orario dei corsi è 19:30-21:00, il martedì e il giovedì.

@@ -1,0 +1,1 @@
+La XinFei (pronunciato "scin fei") è un'associazione non a scopo di lucro che nasce nel 2000 con l'obiettivo di promuovere la diffusione della cultura dell'estremo oriente attraverso la pratica del TAI CHI.

@@ -1,0 +1,58 @@
+---
+- url: https://sites.google.com/view/sciformtest/home
+  label: Pagina di test
+  md5: 9215940495974d59f48c5dd78aca5366
+- url: http://formazioneprimaria.campusnet.unito.it/do/home.pl
+  label: HOME
+  md5: d912fb8cb478ec307a274f5c96e3ab51
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=28z5
+  label: LAB A TECNICHE OSS.
+  md5: 585f7d6c6c75ddb979c3cdfa8cc24fab
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=oslk
+  label: LAB B TECNICHE OSS.
+  md5: c668983a7fe6c19d80de53f052381306
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=547o
+  label: LAB C TECNICHE OSS.
+  md5: aff6c52766582fadca61b6a705c05687
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=87yd
+  label: LAB D TECNICHE OSS.
+  md5: 4f10cf18531d3e1d1ae67aa32ab1175c
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=ai1t
+  label: LAB E TECNICHE OSS.
+  md5: 24333fc5e0bf72bafba85160a3ed4c9a
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=8ztz
+  label: LAB F TECNICHE OSS.
+  md5: 7035c442d2a65790da173cc53c57e4f4
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=x1s7
+  label: LAB G TECNICHE OSS.
+  md5: 4e6404a522d1427aadf374a194b84d54
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=ibqd
+  label: TECNOLOGIE DELL'ISTRUZIONE E DELL'APPRENDIMENTO
+  md5: 0cb2ea756980fce9294c7ddea8b3dcf6
+- url: http://formazioneprimaria.campusnet.unito.it/do/didattica.pl/Quest?corso=tivs
+  label: LAB F INGLESE - MATERIALE DIDATTICO
+  md5: 8d2a874a682ff2eb1db060e152e985cd
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=d9x6
+  label: LAB SCIENZE IL MONDO INVISIBILE
+  md5: 978f2f1f787e87325d9be6d18fbeeb18
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=5d77
+  label: LAB RESIDENZIALE NOI E LA NATURA
+  md5: 8a297cf066383579932d6aca89a1eaa2
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=y2hp
+  label: LAB SCIENZE - AVVENTURE IN NATURA
+  md5: 189bfe670f63855fa47b38a570994ae4
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=s49o
+  label: LAB E SCIENZE
+  md5: 148dc7f4d9c5e65545854f2c0769aca8
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=yg95
+  label: LAB F SCIENZE
+  md5: 33a476e165a4db2be36952b08d9af04a
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=cnu5
+  label: LAB G SCIENZE
+  md5: ceadb29d59bdf0e5e2605540609e8d74
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=qm6q
+  label: LAB H SCIENZE
+  md5: 61d6c916598cd9c63ea64fafe3b502b7
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=mg8f
+  label: LAB I SCIENZE
+  md5: 42a31c41668065d9e4cc14349d03b767

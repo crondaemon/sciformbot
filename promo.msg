@@ -1,0 +1,1 @@
+La promozione in corso prevede 20 lezioni a 29 euro, per il corso autunnale che si terra' tutti i martedi' e giovedi' ore 19:30-21:00 a partire dal 10 ottobre.

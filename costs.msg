@@ -1,0 +1,1 @@
+Il costo dei corsi (contributo volontario per attività associative) è di 30 euro/mese + 15 euro di iscrizione. Sono previsti sconti per chi accorpa più mesi.
