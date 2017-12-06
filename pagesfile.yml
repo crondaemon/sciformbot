@@ -1,58 +1,172 @@
 ---
 - url: https://sites.google.com/view/sciformtest/home
   label: Pagina di test
-  md5: 9215940495974d59f48c5dd78aca5366
+  md5: 8ce18b850dfafc2898b48a5f9062cb76
 - url: http://formazioneprimaria.campusnet.unito.it/do/home.pl
   label: HOME
-  md5: d912fb8cb478ec307a274f5c96e3ab51
+  md5: 3fc97f15bf89915ccc25f1c87e957588
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=28z5
   label: LAB A TECNICHE OSS.
-  md5: 585f7d6c6c75ddb979c3cdfa8cc24fab
+  md5: 06fa283ea05cfef704bb063c92959791
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=oslk
   label: LAB B TECNICHE OSS.
-  md5: c668983a7fe6c19d80de53f052381306
+  md5: e8d9a388d6f896aabe3d8bd467d9a0f7
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=547o
   label: LAB C TECNICHE OSS.
-  md5: aff6c52766582fadca61b6a705c05687
+  md5: b9954740ea5f1ce53ba326630883719d
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=87yd
   label: LAB D TECNICHE OSS.
-  md5: 4f10cf18531d3e1d1ae67aa32ab1175c
+  md5: dfa417fb7b302608ad3dd4601eef3b01
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=ai1t
   label: LAB E TECNICHE OSS.
-  md5: 24333fc5e0bf72bafba85160a3ed4c9a
+  md5: 2b40d6c165804b9df29308b53ff4deed
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=8ztz
   label: LAB F TECNICHE OSS.
-  md5: 7035c442d2a65790da173cc53c57e4f4
+  md5: 767d7b685902fed76ee914e77b5d1964
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=x1s7
   label: LAB G TECNICHE OSS.
-  md5: 4e6404a522d1427aadf374a194b84d54
+  md5: 04f70dd1a1c6e4dff9ee3a710868223b
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=ibqd
   label: TECNOLOGIE DELL'ISTRUZIONE E DELL'APPRENDIMENTO
-  md5: 0cb2ea756980fce9294c7ddea8b3dcf6
+  md5: 8ecd63bc1de7b95ca6e9e96905a4cd61
 - url: http://formazioneprimaria.campusnet.unito.it/do/didattica.pl/Quest?corso=tivs
   label: LAB F INGLESE - MATERIALE DIDATTICO
-  md5: 8d2a874a682ff2eb1db060e152e985cd
+  md5: 4b4129a5f0b5a98016e24a9405ded79b
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=d9x6
   label: LAB SCIENZE IL MONDO INVISIBILE
-  md5: 978f2f1f787e87325d9be6d18fbeeb18
+  md5: b9abdf4e494d3e44ff3c7dfef55e8725
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=5d77
   label: LAB RESIDENZIALE NOI E LA NATURA
-  md5: 8a297cf066383579932d6aca89a1eaa2
+  md5: 257198211b7621d8a4872b9f67e32264
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=y2hp
   label: LAB SCIENZE - AVVENTURE IN NATURA
-  md5: 189bfe670f63855fa47b38a570994ae4
+  md5: 45442fe32d9c773a401fbd3bf741d408
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=s49o
   label: LAB E SCIENZE
-  md5: 148dc7f4d9c5e65545854f2c0769aca8
+  md5: 4e59508fa69a8e5f12b2cfa9a6aaa336
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=yg95
   label: LAB F SCIENZE
-  md5: 33a476e165a4db2be36952b08d9af04a
+  md5: fa841104e07b44bc76d6f9da544a6a30
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=cnu5
   label: LAB G SCIENZE
-  md5: ceadb29d59bdf0e5e2605540609e8d74
+  md5: c6e8ad5bc2860a6ff4392364ecb4d7b2
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=qm6q
   label: LAB H SCIENZE
-  md5: 61d6c916598cd9c63ea64fafe3b502b7
+  md5: eea6623eb8205f4208c9b28041807002
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=mg8f
   label: LAB I SCIENZE
-  md5: 42a31c41668065d9e4cc14349d03b767
+  md5: 734a6fd1de40570725b4f0b9a2a2ca0a
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=q6kp
+  label: DIDATTICA GENERALE
+  md5: d34b0c39109f40008253ec67ebdd67c5
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=wzki
+  label: LAB A DIDATTICA
+  md5: 5dca912fd6a26592efdf172f86127611
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=pf5e
+  label: LAB B DIDATTICA
+  md5: 97377b40bf5de222f91a0acd687e6bb5
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=pyo0
+  label: LAB C DIDATTICA
+  md5: 76a67b5398a5d3fdbfe768634da60484
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=qtoa
+  label: LAB D DIDATTICA
+  md5: 4929b8fe6bab5b975a18647b09222655
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=7wml
+  label: LAB E DIDATTICA
+  md5: bacf6e59fa6994aba7be42743ef10e67
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=1zv6
+  label: LAB F DIDATTICA
+  md5: f07f45e0ea130d0fe1a2bbbbfab798b3
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=2wnb
+  label: LAB G DIDATTICA
+  md5: df1e377d96e7e49c979382f6bc5e3fa4
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=9wqp
+  label: LAB A TECNOLOGIE
+  md5: 87af88b0bb5f24083a9eaeeae94f5fcc
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=wq51
+  label: LAB B TECNOLOGIE
+  md5: ad91d38101b1c4a884e4866cd064ccb4
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=f0sk
+  label: LAB C TECNOLOGIE
+  md5: fc4dbc53da5b03ee38fbb689701732f6
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=66z1
+  label: LAB A FISICA
+  md5: 8e29decf3a7172ed297dffaecfe05840
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=plya
+  label: LAB B FISICA
+  md5: dd164eba1e6513b4319c28365a518577
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=q7k1
+  label: LAB C FISICA
+  md5: 5e5829bf3ceed3329369d4718f0b94ce
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=o5af
+  label: LAB D FISICA
+  md5: 53e63a8f9a495a61ad2feb9666812c41
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=h5b1
+  label: LAB E FISICA
+  md5: 980b693723dfc35963020b0d9b1c5f41
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=m1to
+  label: LAB F FISICA
+  md5: 956a866516ea95eec80b41301fe49094
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=dupd
+  label: LAB G FISICA
+  md5: 5ea1d475ec7c1b410b5336cae8097d6f
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=80md
+  label: LAB A GRAMMATICA
+  md5: c1699bcbd80a5988f8d78aa710715f6f
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=owwr
+  label: LAB B GRAMMATICA
+  md5: d69f10f119a22ce9a91895de7b6fb5c8
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=25k1
+  label: LAB C GRAMMATICA
+  md5: f3775d9fc20e84cfaabdd847cb3aa7e3
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=ast1
+  label: LAB D GRAMMATICA
+  md5: 90fa5d619da0059724e6f9f434234427
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=b2cz
+  label: LAB E GRAMMATICA
+  md5: e4eb81ae08a7b6837eec2b05f13bf54d
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=exy7
+  label: LAB F GRAMMATICA
+  md5: 07f6350193c2be9c55a7f801f91670a4
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=dq64
+  label: LAB G GRAMMATICA
+  md5: c8ecd2b8091f6691cb0dba8dd1578da2
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=cni7
+  label: LETTERATURA ITALIANA
+  md5: 9edd9f81fc44e265260ceb11a28c96c9
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=hafx
+  label: LAB A LETTERATURA
+  md5: b3f6c809c5f99c13db79424571f4661e
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=q00b
+  label: LAB B LETTERATURA
+  md5: c4e5d486d531e20f2c15a516198f42ee
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=9xmo
+  label: LAB C LETTERATURA
+  md5: 3ba338db23bf6c8d58e06f99627eb854
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=5zd9
+  label: LAB E LETTERATURA
+  md5: 245c6358ab7deddbbc511f033599bb1d
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=o9am
+  label: LAB F LETTERATURA
+  md5: 410a1caafa770e4bf5a3e74788d06a92
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=hd71
+  label: LAB G LETTERATURA
+  md5: 41a170ae6fd7a7a5b1cc297730670331
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=ez07
+  label: LAB A MUSICA
+  md5: b1d329a18ca197e3926e299b4b8ece7c
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=l7e6
+  label: LAB B MUSICA
+  md5: 6b0c5bd9c8b994debae545714d847e46
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=n8nr
+  label: LAB C MUSICA
+  md5: 2d0bebd31e59437dc87c5b7bf8929f05
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=kh47
+  label: LAB D MUSICA
+  md5: 9d2fdae9f8bf8d0d64eaabaede22bf62
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=qjhi
+  label: LAB E MUSICA
+  md5: 17585fb65f2411531ffa460510e21217
+- url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=zvaa
+  label: LAB F MUSICA
+  md5: 56645d86a6cc4d790b69d6a1b61cc719
