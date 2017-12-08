@@ -87,10 +87,10 @@ def get_page_md5(page)
 	return Digest::MD5.hexdigest(plain), plain.size
 end 
 
-def notify_users(page, diff = 0)
+def notify_users(page)
 	Chat.where(permit: true).each do |chat|
 		$bot.logger.debug("Notify chat #{chat.chat_id} (#{chat.ref})")
-		send_message(chat, "La pagina [#{page.label}](#{page.url}) e' cambiata (caratteri: #{sprintf("%+d", diff)}")
+		send_message(chat, "La pagina [#{page.label}](#{page.url}) e' cambiata.")
 	end
 end
 
@@ -130,7 +130,7 @@ def pages_loop
 				diff = bytes - page.bytes
 				page.md5 = md5
 				page.save	
-				notify_users(page, diff)
+				notify_users(page) if diff > 5
 			end 
 		end
 		sleep ENV['SLEEP_TIME'] ? ENV['SLEEP_TIME'].to_i : 20 * minute
