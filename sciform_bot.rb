@@ -172,6 +172,7 @@ def log_lines(lines)
 	end
 end
 
+puts "START"
 threads = []
 threads << Thread.new do
 	while true
