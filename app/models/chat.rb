@@ -1,5 +1,6 @@
 class Chat < ApplicationRecord
-	def self.adapt(h)
+	def self.adapt(chat)
+		h = chat.to_h
 		h[:chat_id] = h[:id]
 		h.delete(:id)
 		h[:chat_type] = h[:type]
