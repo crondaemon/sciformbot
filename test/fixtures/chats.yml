@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chat_id: 1
+  chat_type: MyString
+  title: MyString
+  username: MyString
+  first_name: MyString
+  last_name: MyString
+  all_members_are_admins: false
+  permit: false
+
+two:
+  chat_id: 1
+  chat_type: MyString
+  title: MyString
+  username: MyString
+  first_name: MyString
+  last_name: MyString
+  all_members_are_admins: false
+  permit: false
