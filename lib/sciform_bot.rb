@@ -130,7 +130,7 @@ def pages_loop
 				diff = bytes - page.bytes
 				page.md5 = md5
 				page.save	
-				notify_users(page) if diff > 5
+				notify_users(page)
 			end 
 		end
 		sleep ENV['SLEEP_TIME'] ? ENV['SLEEP_TIME'].to_i : 20 * minute
