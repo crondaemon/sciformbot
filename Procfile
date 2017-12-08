@@ -1,1 +1,1 @@
-worker: bundle exec ruby sciformbot.rb
+worker: bundle exec ruby sciform_bot.rb
