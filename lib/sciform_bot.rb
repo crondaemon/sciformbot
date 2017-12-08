@@ -83,13 +83,14 @@ end
 
 def get_page_md5(page)
 	html = RestClient.get(page.url)
-	Digest::MD5.hexdigest(HtmlToPlainText.plain_text(html))
+	plain = HtmlToPlainText.plain_text(html)
+	Digest::MD5.hexdigest(plain), plain.size
 end 
 
-def notify_users(page)
+def notify_users(page, size = 0)
 	Chat.where(permit: true).each do |chat|
 		$bot.logger.debug("Notify chat #{chat.chat_id} (#{chat.ref})")
-		send_message(chat, "La pagina [#{page.label}](#{page.url}) e' cambiata.")
+		send_message(chat, "La pagina [#{page.label}](#{page.url}) e' cambiata (#{sprintf("%+d", size)}")
 	end
 end
 
@@ -111,17 +112,25 @@ def pages_loop
 		Page.find_each do |page|
 			send_chats_action(:typing)
 			$bot.logger.debug("Checking #{page['label']}")
-			md5 = get_page_md5(page)
+			md5,size = get_page_md5(page)
+
+			if !page.size
+				page.size = size
+				page.save
+			end
+
 			case
 			when !page.md5
 				$bot.logger.debug("No md5 for page #{page.label}, saving.")
 				page.md5 = md5
+				page.size = size
 				page.save
 			when md5 != page.md5
 				$bot.logger.debug("Page #{page.label} has changed. (#{md5} vs #{page.md5}")
+				diff = size - page.size
 				page.md5 = md5
 				page.save	
-				notify_users(page)
+				notify_users(page, size)
 			end 
 		end
 		sleep ENV['SLEEP_TIME'] ? ENV['SLEEP_TIME'].to_i : 20 * minute
