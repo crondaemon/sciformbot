@@ -22,14 +22,14 @@ end
 $commands = Telegram::Bot::Types::ReplyKeyboardMarkup.new(resize_keyboard: true,
 	keyboard: [['/pagine']])
 
-def send_message(chat_id, text)
+def send_message(chat_id, text, keyboard = false)
 	if !$chats.dig(chat_id, :permit)
 		$bot.api.send_message(chat_id: chat_id, text: "Questa chat non e' autorizzata!")
 		return
 	end
 
 	begin
-		$bot.api.send_message(chat_id: chat_id, reply_markup: $commands, parse_mode: 'Markdown', text: text)
+		$bot.api.send_message(chat_id: chat_id, reply_markup: (keyboard ? $commands : nil), parse_mode: 'Markdown', text: text)
 	rescue Telegram::Bot::Exceptions::ResponseError => e
 		$bot.logger.info("The chat #{chat_id} is no longer responding. Removing.")
 		$bot.logger.debug("Chat reported: #{e}")
@@ -63,7 +63,7 @@ def process_pages(chat)
 end
 
 def process_hello(chat)
-	send_message(chat.id, "Ciao :-)")
+	send_message(chat.id, "Ciao \u{1F603}", true)
 end
 
 def telegram_loop

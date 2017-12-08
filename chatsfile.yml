@@ -1,0 +1,29 @@
+---
+-285218099:
+  :id: -285218099
+  :type: group
+  :title: Sciform modifiche
+  :username: 
+  :first_name: 
+  :last_name: 
+  :all_members_are_admins:
+  :permit: true
+-263180017:
+  :id: -263180017
+  :type: group
+  :title: Sciform modifiche devel
+  :username: 
+  :first_name: 
+  :last_name: 
+  :all_members_are_admins: 
+  :permit: true
+312388054:
+  :id: 312388054
+  :type: private
+  :title: 
+  :username: crondaemon
+  :first_name: Dario
+  :last_name: Lombardo
+  :all_members_are_admins: 
+  :permit: true
+  

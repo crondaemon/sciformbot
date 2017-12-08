@@ -4,7 +4,7 @@
   md5: 8ce18b850dfafc2898b48a5f9062cb76
 - url: http://formazioneprimaria.campusnet.unito.it/do/home.pl
   label: HOME
-  md5: 3fc97f15bf89915ccc25f1c87e957588
+  md5: 22dffc65bbbddb177cce6874f11a29f0
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=28z5
   label: LAB A TECNICHE OSS.
   md5: 06fa283ea05cfef704bb063c92959791
@@ -85,7 +85,7 @@
   md5: 87af88b0bb5f24083a9eaeeae94f5fcc
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=wq51
   label: LAB B TECNOLOGIE
-  md5: ad91d38101b1c4a884e4866cd064ccb4
+  md5: 67acf6c786fa452031d49787c368aff7
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=f0sk
   label: LAB C TECNOLOGIE
   md5: fc4dbc53da5b03ee38fbb689701732f6
@@ -160,7 +160,7 @@
   md5: 6b0c5bd9c8b994debae545714d847e46
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=n8nr
   label: LAB C MUSICA
-  md5: 2d0bebd31e59437dc87c5b7bf8929f05
+  md5: 6816a4bc6cab0e500218570365eb1ee2
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=kh47
   label: LAB D MUSICA
   md5: 9d2fdae9f8bf8d0d64eaabaede22bf62
@@ -169,4 +169,4 @@
   md5: 17585fb65f2411531ffa460510e21217
 - url: http://formazioneprimaria.campusnet.unito.it/do/corsi.pl/Show?_id=zvaa
   label: LAB F MUSICA
-  md5: 56645d86a6cc4d790b69d6a1b61cc719
+  md5: 2c26f3708c3a448ffc26cfba02b026b4
