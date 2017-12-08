@@ -84,7 +84,7 @@ end
 def get_page_md5(page)
 	html = RestClient.get(page.url)
 	plain = HtmlToPlainText.plain_text(html)
-	Digest::MD5.hexdigest(plain), plain.size
+	return Digest::MD5.hexdigest(plain), plain.size
 end 
 
 def notify_users(page, size = 0)
