@@ -89,7 +89,7 @@ end
 
 def notify_users(page)
 	Chat.where(permit: true).each do |chat|
-		$bot.logger.debug("Notify chat #{chat.chat_id} (#{chat.ref})")
+		$bot.logger.info("Notify chat #{chat.chat_id} (#{chat.ref})")
 		send_message(chat, "La pagina [#{page.label}](#{page.url}) e' cambiata.")
 	end
 end
@@ -111,7 +111,7 @@ def pages_loop
 		next if !$bot
 		Page.find_each do |page|
 			send_chats_action(:typing)
-			$bot.logger.debug("Checking #{page['label']}")
+			$bot.logger.info("Checking #{page['label']}")
 			md5,bytes = get_page_md5(page)
 
 			if !page.bytes
@@ -126,7 +126,7 @@ def pages_loop
 				page.bytes = bytes
 				page.save
 			when md5 != page.md5
-				$bot.logger.debug("Page #{page.label} has changed. (#{md5} vs #{page.md5}")
+				$bot.logger.info("Page #{page.label} has changed. (#{md5} vs #{page.md5}")
 				diff = bytes - page.bytes
 				page.md5 = md5
 				page.save	
