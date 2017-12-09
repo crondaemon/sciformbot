@@ -51,7 +51,10 @@ end
 def telegram_loop
 	token = '469458692:AAGXSGyzD2Bo7KjOTEG-GtcmP6Ci8mZMCeo'
 	$bot = Telegram::Bot::Client.new(token, logger: Logger.new(STDOUT))
-	$bot.logger.level = "Logger::#{ENV['LOG_LEVEL']}".constantize if ENV['LOG_LEVEL']
+	if ENV['LOG_LEVEL']
+		$bot.logger.info("Changing logging level to #{ENV['LOG_LEVEL']}")
+		$bot.logger.level = "Logger::#{ENV['LOG_LEVEL']}".constantize
+	end
 	$bot.options[:timeout] = 3
 
 	$bot.listen do |message|
