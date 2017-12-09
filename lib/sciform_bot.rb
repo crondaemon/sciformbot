@@ -53,6 +53,7 @@ def telegram_loop
 	$bot = Telegram::Bot::Client.new(token, logger: Logger.new(STDOUT))
 	if ENV['LOG_LEVEL']
 		$bot.logger.info("Changing logging level to #{ENV['LOG_LEVEL']}")
+		Rails.logger.level = ENV['LOG_LEVEL'].to_sym
 		$bot.logger.level = "Logger::#{ENV['LOG_LEVEL']}".constantize
 	end
 	$bot.options[:timeout] = 3
