@@ -59,7 +59,7 @@ def telegram_loop
 	$bot.options[:timeout] = 3
 
 	$bot.listen do |message|
-		chat = Chat.find_by_chat_id(meessage.chat.id)
+		chat = Chat.find_by_chat_id(message.chat.id)
 		if !chat
 			chat = Chat.create(Chat.adapt(message.chat))
 		end
