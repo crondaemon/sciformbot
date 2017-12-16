@@ -1,4 +1,6 @@
 class Chat < ApplicationRecord
+	validates :chat_id, uniqueness: true
+
 	def self.adapt(chat)
 		h = chat.to_h
 		h[:chat_id] = h[:id]
