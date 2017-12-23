@@ -104,6 +104,7 @@ end
 
 def talk
 	t = BotTalk.where(sent: false).first
+	return if !t
 	Chat.where(permit: true).each do |chat|
 		send_message(chat, t.sentence)
 	end
