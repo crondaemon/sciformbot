@@ -59,3 +59,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'telegram-bot-ruby', require: false
 gem 'html_to_plain_text', require: false
 gem 'rest-client', require: false
+gem 'yaml_db'

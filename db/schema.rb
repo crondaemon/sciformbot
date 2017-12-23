@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
+ActiveRecord::Schema.define(version: 3) do
 
   create_table "chats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "chat_id"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2) do
     t.boolean "permit"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "all_members_are_administrators"
   end
 
   create_table "pages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
