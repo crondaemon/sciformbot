@@ -105,7 +105,10 @@ end
 def talk
 	t = BotTalk.where(sent: false).first
 	return if !t
-	Chat.where(permit: true).each do |chat|
+	$bot.logger.info("Found a message to send: #{t.sentence}")
+	chats = Chat.where(permit: true)
+	return if !chats
+	chats.each do |chat|
 		send_message(chat, t.sentence)
 	end
 	t.sent = true
