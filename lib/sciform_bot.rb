@@ -102,15 +102,13 @@ def notify_users(page)
 	end
 end
 
-def send_admin_message
-	filename = "admin.txt"
-	return if !File.exists? filename
-	text = File.read(filename)
+def talk
+	t = BotTalk.where(sent: false).first
 	Chat.where(permit: true).each do |chat|
-		$bot.logger.info("Sending admin message to #{chat.ref}")
-		send_message(chat, text)
+		send_message(chat, t.sentence)
 	end
-	FileUtils.rm(filename)
+	t.sent = true
+	t.save
 end
 
 def pages_loop
@@ -176,7 +174,7 @@ end
 threads << Thread.new do
 	while true
 		begin
-			send_admin_message
+			talk
 			sleep 5
 		rescue => e
 			$bot.logger.error("Error in admin message loop: #{e}")

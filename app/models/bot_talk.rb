@@ -1,0 +1,2 @@
+class BotTalk < ApplicationRecord
+end
