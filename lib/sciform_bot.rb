@@ -40,7 +40,7 @@ def process_pages(chat)
 	text = "Le mie pagine monitorate sono:\n\n"
 
 	Page.find_each do |page,i|
-		text << "[#{page.label}](#{page.url})\n"
+		text << "- [#{page.label}](#{page.url})\n"
 	end
 
 	send_message(chat, text)
