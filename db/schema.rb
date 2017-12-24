@@ -12,27 +12,32 @@
 
 ActiveRecord::Schema.define(version: 3) do
 
+  create_table "bot_talks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "sentence"
+    t.boolean "sent", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "chats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer "chat_id"
     t.string "chat_type"
     t.string "title"
     t.string "username"
     t.string "first_name"
     t.string "last_name"
-    t.boolean "all_members_are_admins"
     t.boolean "permit"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean "all_members_are_administrators"
   end
 
   create_table "pages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "url"
     t.string "label"
     t.string "md5"
     t.integer "bytes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end
