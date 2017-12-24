@@ -6,6 +6,8 @@ require 'rest-client'
 $commands = Telegram::Bot::Types::ReplyKeyboardMarkup.new(resize_keyboard: true,
 	keyboard: [['/pagine']])
 
+$remove_kb = Telegram::Bot::Types::ReplyKeyboardRemove.new(remove_keyboard: true)
+
 def send_message(chat, text, keyboard = false)
 	if !chat.permit
 		$bot.api.send_message(chat_id: chat.chat_id, text: "Questa chat non e' autorizzata!")
@@ -13,7 +15,7 @@ def send_message(chat, text, keyboard = false)
 	end
 
 	begin
-		$bot.api.send_message(chat_id: chat.chat_id, reply_markup: (keyboard ? $commands : nil), parse_mode: 'Markdown', text: text)
+		$bot.api.send_message(chat_id: chat.chat_id, reply_markup: $remove_kb, parse_mode: 'Markdown', text: text)
 	rescue Telegram::Bot::Exceptions::ResponseError => e
 		$bot.logger.info("The chat #{chat.ref} is no longer responding. Removing.")
 		$bot.logger.debug("Chat reported: #{e}")
