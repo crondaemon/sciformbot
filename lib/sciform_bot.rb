@@ -6,8 +6,6 @@ require 'rest-client'
 $commands = Telegram::Bot::Types::ReplyKeyboardMarkup.new(resize_keyboard: true,
 	keyboard: [['/pagine']])
 
-$remove = Telegram::Bot::Types::ReplyKeyboardRemove.new(remove_keyboard: true)
-
 def send_message(chat, text, keyboard = false)
 	if !chat.permit
 		$bot.api.send_message(chat_id: chat.chat_id, text: "Questa chat non e' autorizzata!")
@@ -15,7 +13,7 @@ def send_message(chat, text, keyboard = false)
 	end
 
 	begin
-		$bot.api.send_message(chat_id: chat.chat_id, reply_markup: $remove, parse_mode: 'Markdown', text: text)
+		$bot.api.send_message(chat_id: chat.chat_id, reply_markup: (keyboard ? $commands : nil), parse_mode: 'Markdown', text: text)
 	rescue Telegram::Bot::Exceptions::ResponseError => e
 		$bot.logger.info("The chat #{chat.ref} is no longer responding. Removing.")
 		$bot.logger.debug("Chat reported: #{e}")
@@ -40,7 +38,7 @@ def process_pages(chat)
 	text = "Le mie pagine monitorate sono:\n\n"
 
 	Page.find_each do |page,i|
-		text << "- [#{page.label}](#{page.url})\n"
+		text << "[#{page.label}](#{page.url})\n"
 	end
 
 	send_message(chat, text)
@@ -51,7 +49,6 @@ def process_hello(chat)
 end
 
 def telegram_loop
-	return
 	token = '469458692:AAGXSGyzD2Bo7KjOTEG-GtcmP6Ci8mZMCeo'
 	$bot = Telegram::Bot::Client.new(token, logger: Logger.new(STDOUT))
 	if ENV['LOG_LEVEL']
@@ -118,14 +115,9 @@ def talk
 	t.save
 end
 
-def check_home
-	puts "check home"
-end
-
 def pages_loop
 	minute = 60
 	while true
-=begin	
 		next if !$bot
 		Page.find_each do |page|
 			send_chats_action(:typing)
@@ -151,8 +143,6 @@ def pages_loop
 				notify_users(page)
 			end 
 		end
-=end		
-		check_home
 		sleep ENV['SLEEP_TIME'] ? ENV['SLEEP_TIME'].to_i : 20 * minute
 	end
 end
