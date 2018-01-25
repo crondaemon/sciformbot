@@ -15,7 +15,8 @@ def send_message(chat, text, keyboard = false)
 	end
 
 	begin
-		$bot.api.send_message(chat_id: chat.chat_id, reply_markup: $remove_kb, parse_mode: 'Markdown', text: text)
+		$bot.api.send_message(chat_id: chat.chat_id, reply_markup: $remove_kb, parse_mode: 'Markdown',
+			text: text, disable_web_page_preview: true)
 	rescue Telegram::Bot::Exceptions::ResponseError => e
 		$bot.logger.info("The chat #{chat.ref} is no longer responding. Removing.")
 		$bot.logger.debug("Chat reported: #{e}")
