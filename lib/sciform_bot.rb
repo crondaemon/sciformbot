@@ -26,8 +26,7 @@ end
 def process_start(chat)
 	text = "Ciao, io sono il bot SciForm. "
 	text << "Ti informero' su modifiche alle mie pagine monitorate. Solo gli utenti autorizzati "
-	text << "possono accedere ai miei servizi. Devi mandarmi il tuo numero per ricevere le mie "
-	text << "notifiche, cosi' posso verificare se sei autorizzato."
+	text << "possono accedere ai miei servizi."
 	send_message(chat, text)
 end
 
@@ -86,7 +85,7 @@ def send_chats_action(action)
 			$bot.api.send_chat_action(chat_id: chat.chat_id, action: action.to_s)
 		rescue Telegram::Bot::Exceptions::ResponseError
 			$bot.logger.info("The chat #{chat.inspect} is no longer responding. Removing.")
-			chats.delete
+			chat.delete
 		end
 	end
 end 
