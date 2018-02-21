@@ -11,6 +11,7 @@ class Chat < ApplicationRecord
 		h.delete(:description)
 		h.delete(:invite_link)
 		h.delete(:pinned_message)
+		h.delete(:all_members_are_administrators)
 		h
 	end
 
