@@ -19,8 +19,7 @@ def send_message(chat, text, keyboard = false)
 			text: text, disable_web_page_preview: true)
 	rescue Telegram::Bot::Exceptions::ResponseError => e
 		$bot.logger.info("The chat #{chat.ref} is no longer responding. Removing.")
-		$bot.logger.debug("Chat reported: #{e}")
-		chat.delete
+		$bot.logger.debug("Chat error: #{e}")
 	end
 end 
 
@@ -84,9 +83,9 @@ def send_chats_action(action)
 	Chat.find_each do |chat|
 		begin
 			$bot.api.send_chat_action(chat_id: chat.chat_id, action: action.to_s)
-		rescue Telegram::Bot::Exceptions::ResponseError
-			$bot.logger.info("The chat #{chat.inspect} is no longer responding. Removing.")
-			chat.delete
+		rescue Telegram::Bot::Exceptions::ResponseError =>
+			$bot.logger.info("The chat #{chat.ref} got an error.")
+			$bot.logger.debug("Chat error: #{e}")
 		end
 	end
 end 
