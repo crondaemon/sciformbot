@@ -83,7 +83,7 @@ def send_chats_action(action)
 	Chat.find_each do |chat|
 		begin
 			$bot.api.send_chat_action(chat_id: chat.chat_id, action: action.to_s)
-		rescue Telegram::Bot::Exceptions::ResponseError =>
+		rescue Telegram::Bot::Exceptions::ResponseError => e
 			$bot.logger.info("The chat #{chat.ref} got an error.")
 			$bot.logger.debug("Chat error: #{e}")
 		end
