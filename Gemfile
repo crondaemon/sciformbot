@@ -9,7 +9,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', ">= 5.1.6.2"
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -60,3 +60,12 @@ gem 'telegram-bot-ruby', require: false
 gem 'html_to_plain_text', require: false
 gem 'rest-client', require: false
 gem 'yaml_db'
+gem "actionview", ">= 5.1.6.2"
+gem "sprockets", ">= 3.7.2"
+gem "nokogiri", ">= 1.10.4"
+gem "activejob", ">= 5.1.6.1"
+gem "rack", ">= 2.0.6"
+gem "rubyzip", ">= 1.2.2"
+gem "ffi", ">= 1.9.24"
+gem "rails-html-sanitizer", ">= 1.0.4"
+gem "loofah", ">= 2.2.3"
