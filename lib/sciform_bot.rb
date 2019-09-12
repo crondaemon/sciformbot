@@ -50,7 +50,7 @@ def process_hello(chat)
 end
 
 def telegram_loop
-	token = '469458692:AAGXSGyzD2Bo7KjOTEG-GtcmP6Ci8mZMCeo'
+	token = ENV['TOKEN']
 	$bot = Telegram::Bot::Client.new(token, logger: Logger.new(STDOUT))
 	if ENV['LOG_LEVEL']
 		$bot.logger.info("Changing logging level to #{ENV['LOG_LEVEL']}")
